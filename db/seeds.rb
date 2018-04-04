@@ -10,10 +10,12 @@ Flat.delete_all
 
 8.times do
   Flat.create(
-    name:
-    address:
-    description:
-    price_per_night:
-    number_of_guests:
+    name: Faker::Company.name,
+    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    description: Faker::Company.bs,
+    price_per_night: Faker::Number.between(100, 300),
+    number_of_guests: Faker::Number.between(2, 50)
   )
 end
+
+puts "flats created"
