@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Flat.delete_all
+
+8.times do
+  Flat.create(
+    name:
+    address:
+    description:
+    price_per_night:
+    number_of_guests:
+  )
+end
