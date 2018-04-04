@@ -5,6 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# css
+gem 'bootstrap-sass'
+gem 'simple_form'
+
 # dummy data
 gem 'faker'
 
